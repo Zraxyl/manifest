@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Remote spec -->
+    <remote
+        name="github"
+        fetch=".."
+        review="github.com" />
+    
+    <default
+        revision="master"
+        remote="github"
+        sync-j="4" />
+
+    <!-- Main sources to clone -->
+    <project path="build/toolset" name="Zraxyl/build_toolset" />
+    <project path="build/developer" name="Zraxyl/build_developer">
+    <project path="build/docker/developing" name="Zraxyl/build_docker_developing" />
+
+    <project path="internal/manifest" name="Zraxyl/manifest" />
+    <project path="internal/pkgbuild" name="Zraxyl/packages" />
+
+</manifest>
